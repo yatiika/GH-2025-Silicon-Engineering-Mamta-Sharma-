@@ -6,7 +6,7 @@ import numpy as np
 
 def extract_features_from_rtl(verilog_file):
     """Extract features like fan-in, fan-out, number of gates, depth using Yosys"""
-    yosys_script = f"""
+    yosys_script = f""" 
     read_verilog {verilog_file}
     hierarchy -check
     proc; opt; fsm; opt
